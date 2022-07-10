@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(pink, magenta);
+  overflow: hidden;
+}
+
+
+/* LAYOUT */
+#mainDiv {
+  display: flex;
+  width: 60vw;
+  position: relative;
+  height: 70vh;
+  border-radius: 10px;
+  box-shadow: 5px 5px 40px #3b3b3b;
+  margin: auto;
+  margin-top: 75px;
+}
+
+#leftPlayerDiv {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#playerTitle1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12vh;
+}
+
+#leftPlayerDiv h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+#leftPlayerDiv h2 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(184, 38, 38);
+}
+
+#rightPlayerDiv {
+  background-color: rgba(230, 230, 230, 0.4);
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#playerTitle2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12vh;
+}
+
+#rightPlayerDiv h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+#rightPlayerDiv h2 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(184, 38, 38);
+}
+
+
+#newgamebutton {
+  position: absolute;
+  left: calc(30vw - 75px);
+  top: 30px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftSideNG {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 40px;
+  width: 75px;
+}
+
+.rightSideNG {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 40px;
+  width: 75px;
+}
+
+.rightSide {
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+.leftSide {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.ngbutton {
+  position: absolute;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+
+.hbutton {
+  position: absolute;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+
+.holdbutton {
+  display: flex;
+  position: absolute;
+  left: calc(30vw - 50px);
+  bottom: 80px;
+}
+
+.leftSideH {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 40px;
+  width: 50px;
+}
+
+.rightSideH {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 40px;
+  width: 50px;
+}
+
+.zogadibutton:hover {
+  outline: none;
+  border: 2px solid rgb(255, 80, 255);
+  cursor: pointer;
+}
+
+.rollbutton {
+  display: flex;
+  position: absolute;
+  top: calc(70vh - 180px);
+  left: calc(30vw - 75px);
+  outline: none;
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+
+.scoreboard {
+  width: 145px;
+  height: 100px;
+  background-color: rgb(184, 38, 38);
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+}
+
+.scoreboard h4 {
+  padding-top: 10px;
+  text-align: center;
+  color: azure;
+  width: 145px;
+  height: fit-content;
+  font-family: 'Nunito', sans-serif;
+}
+
+#player1unsavedscore {
+  display: block;
+  height: fit-content;
+  text-align: center;
+  width: 145px;
+  margin-top: 10px;
+  color: azure;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+}
+
+#player2unsavedscore {
+  display: block;
+  height: fit-content;
+  text-align: center;
+  width: 145px;
+  margin-top: 10px;
+  color: azure;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.diceHolder {
+  position: absolute;
+  width: auto;
+  max-height: 140px;
+  top: 100px;
+  left: calc(30vw - 70px);
+}
+
+.diceimage {
+  width: inherit;
+  height: 140px;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+#triesLefth3 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+#triesleftdiv {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#triesLeft {
+  display: block;
+  font-size: x-large;
+  font-family: 'Nunito';
+  font-weight: 600;
+  text-align: center;
+  padding-left: 10px;
+}
+
+#winnerTitle {
+  font-family: 'Nunito', sans-serif;
+  margin-top: 5px;
+  text-align: center;
+}

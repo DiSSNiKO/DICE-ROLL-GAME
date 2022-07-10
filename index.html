@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pig Game</title>
+</head>
+
+<body>
+  <div id="triesleftdiv">
+    <h1 id="triesLefth3">Tries left </h1>
+    <span id="triesLeft">0</span>
+  </div>
+  <h1 id="winnerTitle">. . .</h1>
+  <div id="mainDiv">
+    <div id="newgamebutton">
+      <div class="leftSideNG leftSide">
+      </div>
+      <div class="rightSideNG rightSide">
+      </div>
+      <button class="ngbutton zogadibutton newgaem">🔄 NEW GAME</button>
+    </div>
+    <div class="rollbutton">
+      <div class="leftSideNG leftSide">
+      </div>
+      <div class="rightSideNG rightSide">
+      </div>
+      <button class="ngbutton zogadibutton commitroll">🎲 ROLL DICE</button>
+    </div>
+    <div class="holdbutton">
+      <div class="leftSideH leftSide">
+      </div>
+      <div class="rightSideH rightSide">
+      </div>
+      <button class="hbutton zogadibutton">💀 HOLD</button>
+    </div>
+    <div class="diceHolder">
+      <img src="dice-1.png" alt="THERES NO ALT BIIIIITCH" class="diceimage">
+    </div>
+    <div id="leftPlayerDiv">
+      <div id="playerTitle1">
+        <h1>PLAYER 1</h1>
+        <h2 id="player1actualscore">0</h2>
+      </div>
+      <div class="scoreboard">
+        <h4>CURRENT</h4>
+        <span id="player1unsavedscore">0</span>
+      </div>
+    </div>
+    <div id="rightPlayerDiv">
+      <div id="playerTitle2">
+        <h1>PLAYER 2</h1>
+        <h2 id="player2actualscore">0</h2>
+      </div>
+      <div class="scoreboard">
+        <h4>CURRENT</h4>
+        <span id="player2unsavedscore">0</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
